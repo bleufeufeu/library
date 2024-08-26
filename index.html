@@ -3,11 +3,48 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type="text/css">
         <script src="script.js" defer></script>
         <title>Library</title>
     </head>
     <body>
+        <h1>The Odin Public Library</h1>
+        <dialog>
+            <button id="closeBtn" autofocus><i class="fa-solid fa-x"></i></button>
+            <form id="addBook">
+                <div class="form">
+                    <div>
+                        <label for="title">Title</label>
+                        <input type="text" id="title" name="bookTitle" required>
+                    </div>
+                    <div>
+                        <label for="author">Author</label>
+                        <input type="text" id="author" name="bookAuthor" required>
+                    </div>
+                    <div>
+                        <label for="pages">Page Count</label>
+                        <input type="number" id="pages" name="bookPages" min="1" required>
+                    </div>
+                    <div>
+                        <p>Have you read this book?</p>
+                        <input type="radio" id="readYes" name="read" value="Yes" required>
+                        <label for="readYes">Yes</label>
+                        <input type="radio" id="readPartial" name="read" value="Partially" required>
+                        <label for="readPartial">Partially</label>
+                        <input type="radio" id="readNo" name="read" value="No" required>
+                        <label for="readNo">No</label>
+                    </div>
+                </div>
+                <button type="submit">Add Book</button>
+            </form>
+        </dialog>
+        
+        <div id="mainContainer">
+            <div id="bookContainer">
+                <button id="modalBtn"><i class="fa-solid fa-circle-plus"></i><span style="font-size: 1.4rem;">Add Book</span></button>
+            </div>
+        </div>
     </body>
 </html>

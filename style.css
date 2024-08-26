@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    color-scheme: light dark;
+}
+
+body {
+    margin: 40px;
+    color: light-dark(#333b3c, #efefec);
+    background-color: light-dark(#efedea, #223a2c);
+}
+
+#bookContainer {
+    display: grid;
+    gap: 20px;
+    grid-template-columns:  repeat(4, 1fr);
+}
+
+.book {
+    background-color: #333b3c;
+    display: grid;
+    grid-template-columns: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#modalBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    cursor: pointer;
+}
+
+.book, #modalBtn {
+    border-radius: 10px;
+    padding: 30px;
+    width: 250px;
+    height: 200px;
+}
+
+button:hover, .book:hover {
+    filter: brightness(120%);
+}
+
+#modalBtn i {
+    font-size: 500%;
+}
+
+.book-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.fa-trash {
+    font-size: 1.2rem;
+    width: fit-content;
+    cursor: pointer;
+    position: relative;
+    top: 15px;
+    left: 190px;
+}
