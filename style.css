@@ -64,3 +64,30 @@ button:hover, .book:hover {
     top: 15px;
     left: 190px;
 }
+
+dialog {
+    border: none;
+    border-radius: 10px;
+}
+
+input, label {
+    display: block;
+}
+
+#closeBtn {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    left: 160px;
+}
+
+dialog p {
+    margin-bottom: 3px;
+}
+
+.radioContainer {
+    display: flex;
+    margin-bottom: 9px;
+}
